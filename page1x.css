@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    color:bisque
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 115px;
+    height: 100%;
+    background-color: #aa2aac;
+    color: rgb(23, 33, 229);
+    text-align: center;
+    padding: 10px 0;
+    /*overflow-y: auto; /* Дозволяє прокручувати сайдбар, якщо вміст не поміщається */
+    /*transform: rotate(-90deg); /* Поворот тексту на 90 градусів проти годинника */
+    /*transform-origin: right top; /* Точка обертання тексту */
+}
+
+/* Селектори тегів */
+header {
+    background-color: rgb(170, 42, 172);
+    color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Використовуємо flexbox */
+    justify-content: space-around; /* Вирівнюємо елементи по горизонталі, розділяючи простір між ними */
+
+    /*flex-direction: column; /* Розміщуємо елементи у стовпчик */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+.shop-button {
+    margin-right: 20px;
+}
+.basket {
+    /*margin-right: auto; /* Зміщуємо вправо */
+    /*margin-left: 20px;*/
+    padding: 10px;
+    background-color: rgba(177, 42, 249, 0.502);
+    box-shadow: 0 0 25px rgba(250, 8, 255, 1);
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+
+ /* Гумова таблична верстка - ТЕХНІЧНЕ ВИКОНАННЯ ЗАВДАННЯ */
+ .basket {
+    width: 10%; /* Ширина таблиці залежить від контейнера */
+    border-collapse: collapse;
+}
+
+.basket th, .basket td {
+    border: 1px solid #5a1b6d2b;
+    padding: 8px;
+    text-align: left;
+}
+main {
+    /*width: 80%; /* Відсоток ширини відносно контейнера (body або іншого елемента) */
+    /*max-width: 1000px; /* Максимальна ширина контейнера */
+    flex-grow: 1; /* Займає всю доступну висоту між хедером і футером */
+    padding-top: 15%; /* Відсоткове значення відносно висоти вікна браузера */
+    padding-bottom: 10%; /* Відсоткове значення відносно висоти вікна браузера */
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 200px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 200px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }

@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(195, 0, 255);
+    color: bisque;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+    margin-bottom: 20px; /* Додано відступ справа для уникнення перекриття з футером */
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery figure {
+    width: 300px; /* Фіксована ширина блоку фігури */
+    margin: 10px; /* Відступ між блоками фігур */
+}
+
+.gallery img {
+    max-width: 100%; /* Зберігаємо пропорції зображення */
+    height: auto;
+}
+
+.gallery figcaption {
+    margin-top: 15px; /* Відступ між зображенням і підписом */
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 115px;
+    height: 100%;
+    background-color: #6b784cb1;
+    color: rgb(23, 229, 33);
+    text-align: center;
+    padding: 10px 0;
+    /*transform-origin: right top; /* Точка обертання тексту */
+}
+
+ @media screen and (min-width: 800px) {
+    body {
+        margin-right: 120px; 
+    }
+
+    .gallery {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(182, 58, 240);
+        color: rgb(23, 31, 146);
+    }
+
+    header {
+        background-color: rgb(161, 154, 161);
+        color: blue;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        text-align: center;
+        padding: 5px 10px;
+        margin-right: 80px; 
+    }
+
+    .shop-button {
+        margin-right: 5px;
+    }
+
+    main {
+        padding: 10px;
+        margin-top: 80px; 
+        margin-bottom: 20px; 
+        margin-right: 80px; 
+    }
+
+    footer {
+        background-color: #b0a3b1;
+        color: rgb(23, 33, 229);
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 5px 0;
+        justify-content: space-around; 
+        align-items: center; 
+        text-align: center;
+        padding: 5px 10px;
+        margin-right: 80px; 
+    }
+} 

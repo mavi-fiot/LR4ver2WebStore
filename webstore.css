@@ -1,0 +1,229 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    color:bisque
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 85px;
+    height: 100%;
+    background-color: #aa2aac;
+    color: rgb(23, 33, 229);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sidebar ul {
+    list-style: none; /* Забирає маркери списку */
+    padding: 0; /* Забирає внутрішні відступи у списку */
+    margin: 0; /* Забирає зовнішні відступи у списку */
+    display: flex;
+    flex-direction: column; /* Розміщення елементів у стовпчик зверху вниз */
+    align-items: center;
+}
+
+.sidebar ul li {
+    transform: rotate(-90deg); /* Поворот тексту на 90 градусів проти годинника */
+    /*transform-origin: center bottom; /* Точка обертання тексту */
+   /* flex-direction: column-reverse; /* Окремо обертаємо кожен елемент у стовпчику */
+    margin: 10px 0; /* Додано відступи між елементами списку */
+    padding: 0 5px; /* Додано внутрішні відступи */
+    white-space: nowrap; /* Заборонено перенесення тексту */
+}
+
+/* Селектори тегів */
+header {
+    background-color: rgb(170, 42, 172);
+    color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Використовуємо flexbox */
+    justify-content: space-around; /* Вирівнюємо елементи по горизонталі, розділяючи простір між ними */
+
+    /*flex-direction: column; /* Розміщуємо елементи у стовпчик */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+.shop-button {
+    margin-right: 20px;
+}
+.basket {
+    /*margin-right: auto; /* Зміщуємо вправо */
+    /*margin-left: 20px;*/
+    padding: 10px;
+    background-color: rgba(177, 42, 249, 0.502);
+    box-shadow: 0 0 25px rgba(250, 8, 255, 1);
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+
+ /* Гумова таблична верстка - ТЕХНІЧНЕ ВИКОНАННЯ ЗАВДАННЯ */
+ .basket {
+    width: 10%; /* Ширина таблиці залежить від контейнера */
+    border-collapse: collapse;
+}
+
+.basket th, .basket td {
+    border: 1px solid #5a1b6d2b;
+    padding: 8px;
+    text-align: left;
+}
+
+/*
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+*/
+main {
+    padding: 20px;
+    margin-top: 150px; /* Враховуємо висоту хедера */
+    margin-bottom: 50px; /* Враховуємо висоту футера */
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+
+
+footer {
+    background-color: #aa2aac;
+    color: rgb(23, 33, 229);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    justify-content: space-around; /* Вирівнюємо елементи по горизонталі, розділяючи простір між ними */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+
+/* Селектори класів */
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+    margin-bottom: 20px; /* Додано відступ справа для уникнення перекриття з футером */
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+.gallery figure {
+    width: 300px; /* Фіксована ширина блоку фігури */
+    margin: 10px; /* Відступ між блоками фігур */
+}
+
+.gallery img {
+    max-width: 100%; /* Зберігаємо пропорції зображення */
+    height: auto;
+}
+
+.gallery figcaption {
+    margin-top: 15px; /* Відступ між зображенням і підписом */
+}
+
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Селектори ідентифікаторів */
+#email {
+    width: 150px;
+}
+
+/* Сусідні селектори */
+h1 + h2 {
+    font-style: italic;
+}
+
+/* Дочірні селектори */
+nav > ol > li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Селектори атрибутів */
+img[alt="FASHION_WEEK"] {
+    border: 1px solid #ccc;
+}
+
+/* Універсальні селектори */
+* {
+    box-sizing: border-box;
+}
+/* 
+@media screen and (min-width: 800px) {
+    .gallery {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(182, 58, 240);
+        color:rgb(23, 31, 146)
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(1, 14, 129);
+        color:rgb(182, 120, 253)
+    }
+    
+    
+}
+
+@media screen and (min-width: 1000px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(1, 14, 129);
+        color:rgb(182, 120, 253)
+    }
+    
+} */
+
+/* @media screen and (max-width: 799px) {
+    .gallery {
+        display: none; 
+} */
+/* 
+@media screen and (min-width: 800px) {
+    .gallery {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(234, 240, 58);
+        color: rgb(23, 31, 146);
+    }
+}
+
+/* @media screen and (max-width: 499px) {
+    .gallery {
+        display: none; 
+    }
+} */
+
+/* @media screen and (max-width: 500px) { 
+    .gallery {
+        margin: 0;
+        padding: 0;
+        background-color: rgb(58, 240, 73);
+        color: rgb(23, 31, 146);
+    }
+} */
+

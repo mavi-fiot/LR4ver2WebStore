@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blue;
+    color:bisque;
+    /*position: relative;*/
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 115px;
+    height: 100%;
+    background-color: #aa2aac;
+    color: rgb(23, 33, 229);
+    text-align: center;
+    padding: 10px 0;
+    /*overflow-y: auto; /* Дозволяє прокручувати сайдбар, якщо вміст не поміщається */
+    /*transform: rotate(-90deg); /* Поворот тексту на 90 градусів проти годинника */
+    /*transform-origin: right top; /* Точка обертання тексту */
+}
+
+/* Селектори тегів */
+header {
+    background-color: rgb(170, 42, 172);
+    color: blue;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Використовуємо flexbox */
+    justify-content: space-around; /* Вирівнюємо елементи по горизонталі, розділяючи простір між ними */
+
+    /*flex-direction: column; /* Розміщуємо елементи у стовпчик */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+.shop-button {
+    margin-right: 20px;
+}
+.basket {
+    /*margin-right: auto; /* Зміщуємо вправо */
+    /*margin-left: 20px;*/
+    padding: 10px;
+    background-color: rgba(177, 42, 249, 0.502);
+    box-shadow: 0 0 25px rgba(250, 8, 255, 1);
+    margin-right: 120px; /* Додано відступ справа для уникнення перекриття з сайдбаром */
+
+}
+
+ 
+main {
+    /*width: 80%; /* Відсоток ширини відносно контейнера (body або іншого елемента) */
+    /*max-width: 1000px; /* Максимальна ширина контейнера */
+    flex-grow: 1; /* Займає всю доступну висоту між хедером і футером */
+    padding-top: 15%; /* Відсоткове значення відносно висоти вікна браузера */
+    padding-bottom: 10%; /* Відсоткове значення відносно висоти вікна браузера */
+}
+
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    /*gap: 20px; /* Відстань між елементами */
+}
+
+.grid-item {
+    width: 200px; /* Ширина плитки */
+    height: 250px; /* Висота плитки */
+    background-color: #e45ae9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Селектори ідентифікаторів */
+#email {
+    width: 150px;
+}
+
+
+footer {
+    background-color: #aa2aac;
+    color: rgb(23, 33, 229);
+    position: absolute; /* Змінено з fixed на absolute */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex; /* Використовуємо flexbox */
+    justify-content: center; /* Розподіляємо простір між елементами */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    padding: 10px 20px;
+    flex-wrap: wrap; /* Застосовуємо перенесення на новий рядок для додаткових елементів */
+}
+
+.footer-content {
+    width: 800px;
+    gap: 10px; /* Доданий відступ між елементами */
+
+    text-align: center;
+
+    display: flex; /* Використовуємо flexbox */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    flex-wrap: wrap; 
+}
+
+.gallery {
+    width: 300px;
+    gap: 20px;
+    display: flex; /* Використовуємо flexbox */
+    justify-content: flex-end; /* Вирівнюємо галерею вправо */
+    align-items: center; /* Вирівнюємо елементи по вертикалі по центру */
+    gap: 10px; /* Доданий відступ між елементами */
+    flex-wrap: wrap; 
+    margin-right: 300px;
+}
+
+.gallery figure {
+    margin: 0; /* Видаляємо зовнішній відступ фігури */
+}
+
+.gallery img {
+    max-width: 100%; /* Зберігаємо пропорції зображення */
+    height: auto;
+    width: 70px; /* Задаємо ширину зображення */
+}
+
+.gallery1 img {
+    max-width: 100%; /* Зберігаємо пропорції зображення */
+    height: auto;
+    width: 250px; /* Задаємо ширину зображення */
+}
+
